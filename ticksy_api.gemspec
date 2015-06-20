@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name          = 'Ticksy API Client'
+  s.name          = 'ticksy_api'
   s.version       = '0.1.0'
   s.license       = 'MIT'
   s.summary       = 'A Ruby client for the Ticksy API https://ticksy.com/'
