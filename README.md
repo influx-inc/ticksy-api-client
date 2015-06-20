@@ -17,7 +17,7 @@ gem install ticksy_api
 Add it to your Gemfile
 
 ```
-gem 'ticksy_api', :git => 'git@github.com:influx-inc/ticksy-api-client.git'
+gem 'ticksy_api', '~> 0.1.0'
 ```
 
 # Usage
