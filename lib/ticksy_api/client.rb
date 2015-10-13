@@ -6,15 +6,15 @@ module TicksyAPI
     end
 
     def my_tickets
-      execute('my-tickets')['my-tickets'].map { |data| Ticket.new data, self }
+      execute('my-tickets')['my-tickets'].map { |data| Ticket.new data }
     end
 
     def open_tickets
-      execute('open-tickets')['open-tickets'].map { |data| Ticket.new data, self }
+      execute('open-tickets')['open-tickets'].map { |data| Ticket.new data }
     end
 
     def closed_tickets
-      execute('closed-tickets')['closed-tickets'].map { |data| Ticket.new data, self }
+      execute('closed-tickets')['closed-tickets'].map { |data| Ticket.new data }
     end
 
     def my_responses_needed
