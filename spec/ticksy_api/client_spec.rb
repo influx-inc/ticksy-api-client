@@ -56,7 +56,10 @@ describe TicksyAPI::Client do
       VCR.use_cassette('Client.error') do
         expect {
           client.my_tickets
-        }.to raise_error TicksyAPI::Error
+        }.to raise_error { |error|
+          expect(error).to be_a(TicksyAPI::Error)
+          expect(error.status).to eq(400)
+        }
       end
     end
   end

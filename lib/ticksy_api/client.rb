@@ -35,9 +35,8 @@ module TicksyAPI
       response = JSON.parse RestClient.get "https://api.ticksy.com/v1/#{@domain}/#{@key}/#{endpoint}.json/#{param}"
 
       if response['error']
-        raise Error.new response['error']
+        raise Error.new(response['code']), response['error']
       end
-
       response
     end
   end

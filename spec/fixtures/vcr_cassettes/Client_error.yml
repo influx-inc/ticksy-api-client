@@ -48,7 +48,7 @@ http_interactions:
       - DAV
     body:
       encoding: UTF-8
-      string: "{\"error\":\"Invalid API Credentials\"}"
-    http_version: 
+      string: "{\"code\":400,\"error\":\"Invalid API Credentials\"}"
+    http_version:
   recorded_at: Sat, 20 Jun 2015 04:41:17 GMT
 recorded_with: VCR 2.9.3
