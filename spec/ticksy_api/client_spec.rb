@@ -59,6 +59,7 @@ describe TicksyAPI::Client do
         }.to raise_error { |error|
           expect(error).to be_a(TicksyAPI::Error)
           expect(error.status).to eq(400)
+          expect(error.message).to eq("Invalid API Credentials")
         }
       end
     end
