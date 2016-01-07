@@ -30,7 +30,8 @@ module TicksyAPI
     end
 
     def ticket_comments(id)
-      execute('ticket-comments', id)['ticket-comments'].map { |data| Comment.new data }
+      # For some reason the JSON key here ("ticket_comments") uses an underscore instead of hyphen.
+      execute('ticket-comments', id)['ticket_comments'].map { |data| Comment.new data }
     end
 
     private

@@ -48,7 +48,7 @@ http_interactions:
       - DAV
     body:
       encoding: UTF-8
-      string: "{\"ticket-comments\":[{\"comment_id\":\"1\",\"system_id\":\"1\",\"user_id\":\"1\",\"ticket_id\":\"1\",\"comment\":\"Ticket Comment\",\"private\":\"0\",\"time_stamp\":\"2015-03-17 05:39:50\",\"edited_time_stamp\":\"0000-00-00 00:00:00\",\"commenter_name\":\"Mikey\",\"user_type\":\"user\",\"type\":\"comment\",\"likes\":\"0\"}]}"
+      string: "{\"ticket_comments\":[{\"comment_id\":\"1\",\"system_id\":\"1\",\"user_id\":\"1\",\"ticket_id\":\"1\",\"comment\":\"Ticket Comment\",\"private\":\"0\",\"time_stamp\":\"2015-03-17 05:39:50\",\"edited_time_stamp\":\"0000-00-00 00:00:00\",\"commenter_name\":\"Mikey\",\"user_type\":\"user\",\"type\":\"comment\",\"likes\":\"0\"}]}"
     http_version:
   recorded_at: Sat, 20 Jun 2015 04:34:12 GMT
 recorded_with: VCR 2.9.3
