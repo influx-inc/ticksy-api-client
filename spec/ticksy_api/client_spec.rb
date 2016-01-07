@@ -3,6 +3,14 @@ require_relative '../spec_helper'
 describe TicksyAPI::Client do
   let(:client) { TicksyAPI::Client.new 'test_domain', 'test_api_key' }
 
+  context 'ticket' do
+    it 'should call the correct api endpoint' do
+      VCR.use_cassette('Client.ticket') do
+        expect(client.ticket(123456).ticket_title).to eq 'My Ticket Title'
+      end
+    end
+  end
+
   context 'my_tickets' do
     it 'should call the correct api endpoint' do
       VCR.use_cassette('Client.my_tickets') do

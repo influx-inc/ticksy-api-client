@@ -5,6 +5,10 @@ module TicksyAPI
       @key = key
     end
 
+    def ticket(ticket_id)
+      Ticket.new execute('ticket', ticket_id)['ticket-data']
+    end
+
     def my_tickets
       execute('my-tickets')['my-tickets'].map { |data| Ticket.new data }
     end
