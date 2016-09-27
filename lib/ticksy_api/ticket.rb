@@ -1,9 +1,7 @@
 module TicksyAPI
   class Ticket < OpenStruct
     def comments
-      ticket_comments.map do |key, data|
-        Comment.new(data) unless key == "attachments"
-      end.compact
+      Comment.from_hash(ticket_comments) unless ticket_comments.nil?
     end
   end
 end
