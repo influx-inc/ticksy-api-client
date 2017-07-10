@@ -3,49 +3,10 @@ http_interactions:
 - request:
     method: get
     uri: https://api.ticksy.com/v1/test_domain/test_api_key/my-responses-needed.json/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
       message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Sat, 20 Jun 2015 04:24:53 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '22'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - PHPSESSID=7164nvro3orql5dtsrc84dtap3; expires=Sat, 20-Jun-2015 05:24:53 GMT;
-        path=/; domain=api.ticksy.com
-      - rgisanonymous=false; expires=Mon, 20-Jul-2015 04:24:53 GMT
-      - rgisanonymous=true; expires=Mon, 20-Jul-2015 04:24:53 GMT
-      - rguserid=32398b11-506d-46fe-a4ea-eb43702d899f; expires=Mon, 20-Jul-2015 04:24:53
-        GMT
-      - rguuid=true; expires=Mon, 20-Jul-2015 04:24:53 GMT
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      Pragma:
-      - no-cache
-      X-Powered-By:
-      - PleskLin
-      Ms-Author-Via:
-      - DAV
     body:
       encoding: UTF-8
       string: "{\"responses-needed\":6}"

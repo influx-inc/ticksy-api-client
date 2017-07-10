@@ -3,49 +3,10 @@ http_interactions:
 - request:
     method: get
     uri: https://api.ticksy.com/v1/test_domain/test_api_key/open-tickets.json/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
       message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Sat, 20 Jun 2015 04:23:14 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - PHPSESSID=km744lq6t97bg1ne8cfvrjki42; expires=Sat, 20-Jun-2015 05:23:14 GMT;
-        path=/; domain=api.ticksy.com
-      - rgisanonymous=false; expires=Mon, 20-Jul-2015 04:23:14 GMT
-      - rgisanonymous=true; expires=Mon, 20-Jul-2015 04:23:14 GMT
-      - rguserid=d4edccd2-206a-4342-b053-dc6eefbadb03; expires=Mon, 20-Jul-2015 04:23:14
-        GMT
-      - rguuid=true; expires=Mon, 20-Jul-2015 04:23:14 GMT
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      Pragma:
-      - no-cache
-      X-Powered-By:
-      - PleskLin
-      Ms-Author-Via:
-      - DAV
     body:
       encoding: UTF-8
       string: "{\"open-tickets\":[{\"ticket_id\":\"1\",\"time_stamp\":\"2015-06-17 12:08:10\",\"user_id\":\"1\",\"assigned_to\":\"1\",\"category_id\":\"1\",\"ticket_type\":\"private\",\"status\":\"open\",\"starred\":null,\"ticket_title\":\"Open Ticket Title\",\"related_url\":\"http:\\/\\/example.com\",\"needs_response\":\"1\"}]}"
