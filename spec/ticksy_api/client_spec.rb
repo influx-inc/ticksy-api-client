@@ -51,6 +51,14 @@ describe TicksyAPI::Client do
     end
   end
 
+  context 'tickets_updated_after' do
+    it 'should call the correct api endpoint' do
+      VCR.use_cassette('Client.tickets_updated_after') do
+        expect(client.tickets_updated_after(1499653800)[0].ticket_title).to eq 'Updated Ticket Title'
+      end
+    end
+  end
+
   context 'ticket_comments' do
     it 'should call the correct api endpoint' do
       VCR.use_cassette('Client.ticket_comments') do
