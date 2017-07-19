@@ -57,6 +57,12 @@ describe TicksyAPI::Client do
         expect(client.tickets_updated_after(1499653800)[0].ticket_title).to eq 'Updated Ticket Title'
       end
     end
+
+    it 'should return an empty array if false' do
+      VCR.use_cassette('Client.tickets_updated_after_false') do
+        expect(client.tickets_updated_after(1500337896)).to eq []
+      end
+    end
   end
 
   context 'ticket_comments' do

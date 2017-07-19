@@ -1,0 +1,15 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ticksy.com/v1/test_domain/test_api_key/tickets-updated-after.json/1500337896
+  response:
+    status:
+      code: 200
+      message: OK
+    body:
+      encoding: UTF-8
+      string: '{"tickets-updated-after":false}'
+    http_version:
+  recorded_at: Wed, 19 Jul 2017 00:55:31 GMT
+recorded_with: VCR 3.0.3

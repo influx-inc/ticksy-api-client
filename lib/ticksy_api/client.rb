@@ -22,7 +22,7 @@ module TicksyAPI
     end
 
     def tickets_updated_after(epoch)
-      execute('tickets-updated-after', epoch)['tickets-updated-after'].map { |data| Ticket.new data }
+      (execute('tickets-updated-after', epoch)['tickets-updated-after'] || []).map { |data| Ticket.new data }
     end
 
     def my_responses_needed
